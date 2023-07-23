@@ -1,8 +1,11 @@
+import Title from '../../components/global/Title'
 import './Dashboard.css'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div>
+    <Title title="Dashboard" />
+  </div>
   )
 }
 

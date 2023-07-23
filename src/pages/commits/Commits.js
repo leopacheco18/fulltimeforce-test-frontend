@@ -1,8 +1,10 @@
-import { Card } from "antd";
 import "./Commits.css";
+import Title from "../../components/global/Title";
 
 const Commits = () => {
-  return <Card className="w-100 h-content-100 b-shadow"></Card>;
+  return <div>
+    <Title title="Commits" />
+  </div>;
 };
 
 export default Commits;
