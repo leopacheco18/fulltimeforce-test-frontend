@@ -1,8 +1,4 @@
-.title{
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin: 0;
-}
+
 
 .header{
   background-color: white;
@@ -16,9 +12,6 @@
   height: 70px;
 }
 
-.title-hr{
-  border: 2px solid black ;
-}
 
 .menu{
   height: 100%;
@@ -74,6 +67,21 @@
   animation: fadeIn 2s;
 }
 
+.ant-layout
+  .ant-layout-sider-trigger {
+  background-color: #06abef !important;
+}
+
+
+.ant-menu-light
+  .ant-menu-item-selected,
+.ant-menu-light
+  > .ant-menu
+  .ant-menu-item-selected {
+  color: black !important;
+  font-weight: bold !important;
+  background-color: rgba(6, 171, 239, 0.25) ;
+}
 
 
 @keyframes expandedSider {
