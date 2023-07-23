@@ -59,8 +59,8 @@ function App() {
               items={menuItems}
             />
           </Sider>
-          <Layout className="padding-content ">
-            <div className="layout-content">
+          <Layout className=" layout-content">
+            <div className="padding-content">
               <Routes>
                 <Route path="/commits" element={<Commits />} />
                 <Route path="/dashboard" element={<Dashboard />} />

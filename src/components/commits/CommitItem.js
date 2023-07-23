@@ -16,7 +16,9 @@ const CommitItem = ({ sha, commit, url, parents }) => {
         <div className="commit-item-content">
           <p><MessageOutlined /> <b>{commit.message}</b></p>
           <p><ClockCircleOutlined /> <b>{commit.committer.date}</b></p>
-          <p><BranchesOutlined /> <b>{parents[0]?.sha.substring(0, 7)}</b> (Parent commit)</p>
+          {parents[0] && parents[0].sha && 
+          <p><BranchesOutlined /> <b>{parents[0].sha.substring(0, 7)}</b> (Parent commit)</p>
+          }
         </div>
         <div className="commit-item-actions">
           <Button type="default" href={url} target="_blank" block>View</Button>

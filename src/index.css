@@ -20,11 +20,22 @@ code {
   border: 2px solid #06abef ;
 }
 
-.subtitle{
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 0;
+.float-right{
+  float: right;
 }
-.subtitle-hr{
-  border: 1px solid black ;
+
+
+.loading-container{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #06abef;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+  font-size: 5rem;
 }

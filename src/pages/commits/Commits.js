@@ -3,6 +3,7 @@ import Title from "../../components/global/Title";
 import useHttp from "../../hooks/useHttp";
 import { useEffect, useState } from "react";
 import CommitItem from "../../components/commits/CommitItem";
+import Loading from "../../components/global/Loading";
 
 const Commits = () => {
   const [commits, setCommits] = useState([]);
@@ -20,7 +21,8 @@ const Commits = () => {
 
   return (
     <div>
-      <Title title="Commits" />
+      {isLoading && <Loading />}
+      <Title title="Commits" reload={getCommits} />
       <div className="commits-container">
         {commits.map((commit) => (<CommitItem {...commit} />))}
       </div>
