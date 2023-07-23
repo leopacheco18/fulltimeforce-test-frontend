@@ -1,0 +1,54 @@
+.commits-container{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.commit-item{
+    width: calc(20% - 20px);
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.commit-item-header{
+    padding: 0 10px;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.commit-item-body{
+    padding: 20px 10px;
+}
+
+.commit-item-committer{
+    display: flex;
+    gap: 15px;
+}
+
+.commit-item-committer-icon{
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgba(6, 171, 239, 0.25);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commit-item-committer-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.commit-item-content{
+    padding: 20px 0;
+}
+.commit-item-content > p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.commit-item-content > p > span{
+    font-size: 1.25rem;
+}

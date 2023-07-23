@@ -19,3 +19,12 @@ code {
 .title-hr{
   border: 2px solid #06abef ;
 }
+
+.subtitle{
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+.subtitle-hr{
+  border: 1px solid black ;
+}
