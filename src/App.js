@@ -3,7 +3,7 @@ import "./App.css";
 import { Header } from "antd/es/layout/layout";
 import Sider from "antd/es/layout/Sider";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import { BarChartOutlined, BranchesOutlined } from "@ant-design/icons";
+import { BarChartOutlined, BranchesOutlined, CloudOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Commits from "./pages/commits/Commits";
@@ -27,9 +27,18 @@ function App() {
       key: "/dashboard",
       icon: <BarChartOutlined />,
     },
+    {
+      label: "Backend api",
+      key: "/api",
+      icon: <CloudOutlined />,
+    },
   ];
 
   const handleMenuClick = (e) => {
+    if(e.key === '/api'){
+      window.open(`${process.env.REACT_APP_BACKEND_URL.replace('/api','')}/docs`, '_blank');
+      return;
+    }
     navigate(e.key);
   };
 
