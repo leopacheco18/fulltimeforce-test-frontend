@@ -7,7 +7,6 @@ import Loading from "../../components/global/Loading";
 
 const Commits = () => {
   const [commits, setCommits] = useState([]);
-  const [page, setPage] = useState(1);
   const { isLoading, requestGet } = useHttp();
 
   useEffect(() => {
@@ -15,7 +14,10 @@ const Commits = () => {
   }, []);
 
   const getCommits = async () => {
-    const response = await requestGet(`/commits?page=${page}`);
+    const response = await requestGet(`/commits`);
+    if(response.name === 'AxiosError'){
+      return
+    }
     setCommits(response);
   };
 
@@ -24,7 +26,7 @@ const Commits = () => {
       {isLoading && <Loading />}
       <Title title="Commits" reload={getCommits} />
       <div className="commits-container">
-        {commits.map((commit) => (<CommitItem {...commit} />))}
+        {commits.map((commit, key) => (<CommitItem key={key} {...commit} />))}
       </div>
     </div>
   );

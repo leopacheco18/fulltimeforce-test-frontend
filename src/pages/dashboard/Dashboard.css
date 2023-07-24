@@ -1,0 +1,81 @@
+.dashboard-container {
+  width: 100%;
+  display: flex;
+  padding-top: 25px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.number-item {
+  width: calc(25% - 18.75px);
+  display: flex;
+}
+
+.doughnut-container {
+  width: calc(50% - 12.5px);
+}
+
+.doughnut-container,
+.number-item {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.doughnut-title > h3 {
+  text-align: center;
+  border-bottom: 2px solid #06abef;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.doughnut-body {
+  padding: 20px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.number-item-icon {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #06abef;
+}
+
+.number-item-content {
+  width: 80%;
+}
+
+.number-item-title {
+  margin: 0 0 0 12.5%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-bottom: 2px solid #06abef;
+  width: 75%;
+  text-align: center;
+}
+.number-item-number {
+  margin: 10px 0 0 12.5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
+}
+
+.last-commit-label {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 992px) {
+  .number-item,
+  .doughnut-container {
+    width: 100%;
+    overflow: auto;
+  }
+}

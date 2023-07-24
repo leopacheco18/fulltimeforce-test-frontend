@@ -69,10 +69,34 @@
 }
 
 .ant-layout
-  .ant-layout-sider-trigger {
+  .ant-layout-sider-trigger,
+  .ant-btn-primary  {
   background-color: #06abef !important;
 }
 
+.ant-pagination
+  .ant-pagination-item-active,
+.ant-pagination
+  .ant-pagination-item-active:hover {
+    border-color: #06abef;
+  }
+
+  .ant-btn-default:not(
+    :disabled
+  ):not(.ant-btn-disabled):hover,
+.ant-btn-default:not(
+    :disabled
+  ):not(.ant-btn-disabled):active {
+  color: #06abef !important;
+  border-color: #06abef !important;
+}
+
+
+.ant-pagination
+  .ant-pagination-item-active
+  a {
+  color: #06abef !important;
+}
 
 .ant-menu-light
   .ant-menu-item-selected,
@@ -106,5 +130,34 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+  .sider-expanded {
+    flex: 0 0 80px;
+    min-width: 80px;
+    max-width: 80px;
+    width: 80px;
+    background-color: white;
+    animation: expandedSider 2s;
+  }
+
+  @keyframes expandedSider {
+    from {
+      flex: 0 0 0;
+      min-width: 0;
+      max-width: 0;
+      width: 0;
+    }
+    to {
+      flex: 0 0 80px;
+      min-width: 80px;
+      max-width: 80px;
+      width: 80px;
+    }
   }
 }
