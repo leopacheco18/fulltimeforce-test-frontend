@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# FullTimeForce Home Test Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+For this project I have decided to use React + Ant Design for the frontend. The backend I have used Nest.js + Swagger. Additionally, the deployment was done in AWS using Docker, ECR and EC2 for the backend and S3 for the frontend.
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+[Live Demo](http://fulltimeforce-home-test-frontend.s3-website-us-east-1.amazonaws.com/commits)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Backend Repo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Repo Backend](https://github.com/leopacheco18/fulltimeforce-test-backend)
 
-### `npm test`
+## Backend enpoints
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Backend endpoints](http://54.237.175.53/docs)
 
-### `npm run build`
+### Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+ $ git clone https://github.com/leopacheco18/fulltimeforce-test-frontend.git
+ $ cd fulltimeforce-test-frontend
+ $ npm install
+ $ cp .env.example .env
+ $ npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> :warning: **If you want to use local backend change this var on .env**: REACT_APP_BACKEND_URL=http://localhost:3001/api
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Example
 
-### `npm run eject`
+1. Commits
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ![1](https://github.com/leopacheco18/fulltimeforce-test-frontend/assets/47113025/e47278f2-cd6c-445b-b2f8-e91a750428a2)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Dashboard
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ![2](https://github.com/leopacheco18/fulltimeforce-test-frontend/assets/47113025/5e1727e9-d4d9-4a55-92f0-36816f279e4d)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Backend Api
 
-## Learn More
+   ![3](https://github.com/leopacheco18/fulltimeforce-test-frontend/assets/47113025/f8e93e7a-1c23-4212-a2fe-61714dd908b9)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
